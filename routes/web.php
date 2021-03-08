@@ -16,3 +16,37 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::get('/trending', function () {
+    return view('trending');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/create', function () {
+    return view('create');
+});
+
+Route::get('/postoknow', function () {
+    return view('postoknow');
+});
+
+Route::get('/expopinion', function () {
+    return view('expopinion');
+});
+
+Route::get('/popappeal', function () {
+    return view('popappeal');
+});
+
+Route::get('/home', function () {
+    return view('home');
+})->middleware('auth');
