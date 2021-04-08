@@ -63,7 +63,6 @@
                     </div>
                     <div class ="form-group"?
                         <label for="">True/False. </label>
-                        <div class="bg-info text-white"> Please enter true or false in lowercase </div>
                         <input type="text" class="form-control" name="boolVal" placeholder="Enter true or false">
                     </div>
                     <div class="form-group">
