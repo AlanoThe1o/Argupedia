@@ -18,7 +18,6 @@ class CreatePopularOpinionsTable extends Migration
             $table->unsignedBigInteger('schemeId')->unsigned();
             $table->foreign('schemeId')->references('id')->on('schemes')->onDelete('cascade')->onUpdate('cascade');
             $table->string('proposition');
-            $table->timestamps();
         });
     }
 

@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Attack extends Model
 {
     use HasFactory;
+    protected $fillable = ['argumentA','argumentB'];
+    public $timestamps = false;
 }

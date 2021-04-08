@@ -4,4 +4,4 @@
 <div>
 <h3> Test </h3>
 </div>
-@endsection('content')
+@endsection('content

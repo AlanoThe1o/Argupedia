@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArgumentsTable extends Migration
+class CreateActionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,17 @@ class CreateArgumentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('arguments', function (Blueprint $table) {
+        Schema::create('actions', function (Blueprint $table) {
             $table->id();
-            $table->string('argument_name');
-            $table->unsignedBigInteger('userId')->unsigned();
             $table->unsignedBigInteger('schemeId')->unsigned();
-            $table->foreign('userId')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('schemeId')->references('id')->on('schemes')->onDelete('cascade')->onUpdate('cascade');
-            $table->bigInteger('votes')->default(0);
+            $table->string('circumstance');
+            $table->string('action');
+            $table->string('goal');
+            $table->string('value');
         });
     }
+    
 
     /**
      * Reverse the migrations.
@@ -31,6 +32,6 @@ class CreateArgumentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('arguments');
+        Schema::dropIfExists('actions');
     }
 }

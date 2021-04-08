@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class DebateArgument extends Model
 {
     use HasFactory;
+    protected $fillable = ['argumentId','debateId'];
+    public $timestamps = false;
 }

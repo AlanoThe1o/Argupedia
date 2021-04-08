@@ -11,23 +11,23 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                        <a class="nav-link" href="trending">{{ __('Trending') }}</a>
+                        <a class="nav-link" href="/debate">{{ __('Debate') }}</a>
                     </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="create">{{ __('Create') }}</a>
+                        <a class="nav-link" href="/create">{{ __('Create') }}</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="about">{{ __('About Us') }}</a>
+                        <a class="nav-link" href="/about">{{ __('Learn More') }}</a>
                 </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="contact">{{ __('Contact Us') }}</a>
-                </li>
-                    
             </ul>
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
+                <form class="form-inline" type="get" action="{{route('search')}}">
+                    <input class="form-control mr-sm-2" type="search" name="searchVal" placeholder="Search" aria-label="Search">
+                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
                 @guest
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -49,7 +49,7 @@
                                              document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
-                            <a class="dropdown-item" href="{{ route('login') }}">
+                            <a class="dropdown-item" href="/mydebate">
                                 {{ __('My Debates') }}
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

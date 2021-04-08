@@ -5,9 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Argument extends Model
+class Action extends Model
 {
     use HasFactory;
-    protected $fillable = ['argument_name','userId', 'schemeId'];
+    protected $table = "actions";
+    protected $fillable = ['circumstance','action','goal','value','schemeId'];
     public $timestamps = false;
 }

@@ -20,6 +20,7 @@ class CreateExpertOpinionsTable extends Migration
             $table->string('expert');
             $table->string('domain');
             $table->string('proposition');
+            $table->boolean('state');
         });
     }
 

@@ -19,6 +19,7 @@ class CreatePositionToKnowsTable extends Migration
             $table->foreign('schemeId')->references('id')->on('schemes')->onDelete('cascade')->onUpdate('cascade');
             $table->string('person');
             $table->string('proposition');
+            $table->boolean('state');
         });
     }
 

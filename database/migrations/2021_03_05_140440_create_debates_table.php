@@ -16,7 +16,7 @@ class CreateDebatesTable extends Migration
         Schema::create('debates', function (Blueprint $table) {
             $table->id();
             $table->string('debate_name');
-            $table->unsignedBigInteger('views');
+            $table->unsignedBigInteger('views')->default(0);
             $table->unsignedBigInteger('userId')->unsigned();
             $table->foreign('userId')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->date('created_at');
