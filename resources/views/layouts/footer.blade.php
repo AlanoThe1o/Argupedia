@@ -1,3 +1,7 @@
+
+ <!-- footer template from:
+https://codepen.io/nikedia/pen/ypeayb -->
+
 <footer id="fh5co-footer" class="fh5co-bg" role="contentinfo">
 		<div class="overlay"></div>
 		<div class="container">

@@ -14,7 +14,7 @@
     
         <div class ="row">
             <div class="col-md-6 cold-md-offset-3" style="margin-top:50px">
-                <h4> Create Popular Opinion Debate </h4>
+                <h4> Create Popular Opinion Attck </h4>
                 @if(count($errors) > 0)
                     <div class ="alert alert-danger">
                     <ul>

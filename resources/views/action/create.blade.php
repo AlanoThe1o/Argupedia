@@ -13,7 +13,7 @@
     <div class="container">
         <div class ="row">
             <div class="col-md-6 cold-md-offset-3" style="margin-top:50px">
-                <h4> Create Action Debate </h4>
+                <h4> Create Debate with Action Argument </h4>
                 @if(count($errors) > 0)
                     <div class ="alert alert-danger">
                     <ul>
@@ -33,16 +33,21 @@
                     <p>{{\Session::get('incorrect')}}</p>
                     </div>
                 @endif
+                <div class="justify-content-center">
+                <div class="card">
+                <div class="class-header"> 
                 <div class="alert alert-dark" role="alert">
                     <strong>Action Argument </strong>
                     <p> In <strong>CIRCUMSTANCE</strong> take <strong>ACTION</strong> to achieve<strong> GOAL </strong> which promotes <strong> VALUE </strong>  </p>
                 </div>
-                <form method="POST" action="{{route('action.store')}}">
+                </div>
+                    <div class="card-body">
+                        <form method="POST" action="{{route('action.store')}}">
                 @csrf
                     <h3 class="header"> 
                     <div class="form-group">
-                        <label for="">Debate Name</label>
-                        <input type="text" class="form-control" name="debateName" placeholder="Enter the name of the debate">
+                        <label for="debateN">Debate Name</label>
+                        <input type="text" class="form-control" id="debateN" name="debateName" placeholder="Enter the name of the debate">
                     </div>
 
                     <div class="form-group">
@@ -69,7 +74,10 @@
                     <div class="form-group">
                     <button type ="submit" class="btn btn-primary btn-block">Create</button>
                     </div>
-                </form>
+                    </form>
+                    </div>
+                </div></div>
+            </div>
             </div>
         </div>
     </div>

@@ -13,8 +13,13 @@
   <div class="card-body">
     <h4 class="card-title">{{$arguments[$i]->argument_name}}</h4>
     <h6 class="card-subtitle mb-2 text-muted">Votes: {{$arguments[$i]->votes}}</h6>
-    <p class="card-text"> Status/Labelling: <p class ="badge badge-success"> {{$argument_labelling[$i]}}</p>
+    <div style="display:inline">
+    <p class="card-text"  style="margin: 0; display: inline;"> Status/Labelling: </p> 
+    <p class ="badge badge-success"  style="margin: 0; display: inline;"> {{$argument_labelling[$i]}}</p>
+    <br>
+    <br>
     <a href="{{route('argument.show',$arguments[$i]['id'])}}" class="btn btn-primary">View Argument</a>
+    </div>
   </div>
 </div>
 @endfor

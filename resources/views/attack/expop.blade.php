@@ -13,7 +13,7 @@
     <div class="container">
         <div class ="row">
             <div class="col-md-6 cold-md-offset-3" style="margin-top:50px">
-                <h4> Create Expert Opinion Debate </h4>
+                <h4> Create Expert Opinion Attack </h4>
                 @if(count($errors) > 0)
                     <div class ="alert alert-danger">
                     <ul>

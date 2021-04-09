@@ -28,7 +28,7 @@
 <div class="card">
 <div class="card-body">
       <h4 class="card-title">Critical Questions</h4>
-      <h6 class="card-subtitle mb-2 ">To attack the argument, consider and select one of the critical questions in order for your argument to be logically correct.</h6>
+      <h6 class="card-subtitle mb-2 ">These provide insight on how to judge an argument. To attack the argument, consider and select one of the critical questions to base your argument on.</h6>
       <a href="{{route('schemeselect',[$debate->id,$argument->id])}}" class="card-link">Is the circumstance: <strong>{{$variables->circumstance}}</strong> true?</a>
       <br>
       <a href="{{route('schemeselect',[$debate->id,$argument->id])}}" class="card-link">Does action: <strong>{{$variables->action}}</strong> achieve the goal: <strong>{{$variables->goal}}</strong>?</a>
