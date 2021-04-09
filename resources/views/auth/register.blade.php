@@ -1,3 +1,4 @@
+<!-- View designed with help of tutorial https://www.youtube.com/watch?v=WDyNYTz3ymY&t=317s&ab_channel=CodeFisher -->
 @extends('layouts.app')
 
 @section('content')
